@@ -152,7 +152,7 @@ public class Schedule_Management extends javax.swing.JFrame {
 
     private void create_scheduleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_create_scheduleMouseClicked
         // TODO add your handling code here:
-        Task_Schedule create_schedule = new Task_Schedule ();
+        Create_Schedule create_schedule = new Create_Schedule ();
         this.setVisible(false);
         create_schedule.setVisible(true);
     }//GEN-LAST:event_create_scheduleMouseClicked

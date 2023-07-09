@@ -55,6 +55,8 @@ public class Edit_Task_Information extends javax.swing.JFrame {
         backToEditSchedule_button = new javax.swing.JButton();
         task_complete_checkbox = new javax.swing.JCheckBox();
         jPanel1 = new javax.swing.JPanel();
+        startDateChooser = new com.toedter.calendar.JDateChooser();
+        endDateChooser = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -124,11 +126,17 @@ public class Edit_Task_Information extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
+            .addComponent(startDateChooser, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
+            .addComponent(endDateChooser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(159, Short.MAX_VALUE)
+                .addComponent(startDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(48, 48, 48)
+                .addComponent(endDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(49, 49, 49))
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 380, 300));
@@ -217,10 +225,12 @@ public class Edit_Task_Information extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backToEditSchedule_button;
+    private com.toedter.calendar.JDateChooser endDateChooser;
     private javax.swing.JLabel enterClassInfo_label;
     private javax.swing.JLabel enterClassStartDate_label;
     private javax.swing.JLabel enterEndDate_label;
     private javax.swing.JPanel jPanel1;
+    private com.toedter.calendar.JDateChooser startDateChooser;
     private javax.swing.JButton submit_button;
     private javax.swing.JCheckBox task_complete_checkbox;
     private javax.swing.JLabel title_label;
