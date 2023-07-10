@@ -45,6 +45,8 @@ public class Create_Task extends javax.swing.JFrame {
         submit_button = new javax.swing.JButton();
         back_to_task_mgmt = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
+        startDateChooser = new com.toedter.calendar.JDateChooser();
+        endDateChooser = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -100,15 +102,25 @@ public class Create_Task extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(51, 102, 255));
 
+        startDateChooser.setBackground(new java.awt.Color(0, 0, 0));
+
+        endDateChooser.setBackground(new java.awt.Color(0, 0, 0));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(startDateChooser, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            .addComponent(endDateChooser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(144, Short.MAX_VALUE)
+                .addComponent(startDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(endDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(94, 94, 94))
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
@@ -210,11 +222,13 @@ public class Create_Task extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton back_to_task_mgmt;
+    private com.toedter.calendar.JDateChooser endDateChooser;
     private javax.swing.JLabel enterEndDate_label;
     private javax.swing.JLabel enterStartDate_label;
     private javax.swing.JLabel enterTaskInfor_label;
     private javax.swing.JTextField enter_classInformation;
     private javax.swing.JPanel jPanel1;
+    private com.toedter.calendar.JDateChooser startDateChooser;
     private javax.swing.JButton submit_button;
     private javax.swing.JLabel title_label;
     // End of variables declaration//GEN-END:variables
