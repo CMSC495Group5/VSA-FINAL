@@ -54,6 +54,8 @@ public class Edit_Course_Information extends javax.swing.JFrame {
         submit_button = new javax.swing.JButton();
         backToEditSchedule_button = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
+        startDateChooser = new com.toedter.calendar.JDateChooser();
+        endDateChooser = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -87,7 +89,7 @@ public class Edit_Course_Information extends javax.swing.JFrame {
         enterClassInfor_textfield.setEditable(false);
 
         enterClassInfor_textfield.setText(this.getClassTextField());
-        getContentPane().add(enterClassInfor_textfield, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 372, 28));
+        getContentPane().add(enterClassInfor_textfield, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 380, 28));
 
         submit_button.setBackground(new java.awt.Color(23, 20, 20));
         submit_button.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -118,11 +120,17 @@ public class Edit_Course_Information extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
+            .addComponent(startDateChooser, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
+            .addComponent(endDateChooser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 290, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(152, Short.MAX_VALUE)
+                .addComponent(startDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(58, 58, 58)
+                .addComponent(endDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 380, 290));
@@ -209,10 +217,12 @@ public class Edit_Course_Information extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backToEditSchedule_button;
+    private com.toedter.calendar.JDateChooser endDateChooser;
     private javax.swing.JLabel enterClassInfo_label;
     private javax.swing.JLabel enterClassStartDate_label;
     private javax.swing.JLabel enterEndDate_label;
     private javax.swing.JPanel jPanel1;
+    private com.toedter.calendar.JDateChooser startDateChooser;
     private javax.swing.JButton submit_button;
     private javax.swing.JLabel title_label;
     // End of variables declaration//GEN-END:variables
